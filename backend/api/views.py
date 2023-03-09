@@ -91,8 +91,6 @@ def createAccount(request):
       name=data['name'],
       email=data['email'],
       address=data['address'],
-      energy_mix_per_day=data['energy_mix_per_day'],
-      overall_energy_mix=data['overall_energy_mix'],
       is_prosumer=data['is_prosumer'],
       )
    transaction = Transactions.objects.create(
